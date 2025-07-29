@@ -6,12 +6,6 @@ const gameResultController = require('./gameResultController');
 router.post('/game-results', gameResultController.createGameResult);
 
 // Get all game results
-router.get('/game-results', gameResultController.getGameResults);
-
-// Get all game results for a specific game
-router.get('/game-results/game/:gameId', gameResultController.getGameResultsByGameId);
-
-// Get a specific game result by ID
-router.get('/game-results/:id', gameResultController.getGameResultById);
+router.get('/results', gameResultController.getGameResults);
 
 module.exports = router;
