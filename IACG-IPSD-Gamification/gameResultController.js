@@ -7,6 +7,6 @@ exports.createGameResult = async (req, res) => {
     await newResult.save();
     res.status(201).json({ message: 'Game result saved', result: newResult });
   } catch (error) {
-    res.status(500).json({ error: 'Failed to save game result', error: error.message });
+    res.status(500).json({ error: 'Failed to save game result' });
   }
-};
+}; 
